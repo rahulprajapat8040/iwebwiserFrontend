@@ -1,0 +1,175 @@
+"use strict";
+exports.id = 1615;
+exports.ids = [1615];
+exports.modules = {
+
+/***/ 1615:
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ContactFormHome)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5893);
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6197);
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5152);
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([framer_motion__WEBPACK_IMPORTED_MODULE_1__]);
+framer_motion__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+
+
+
+
+const ConsultantForm = next_dynamic__WEBPACK_IMPORTED_MODULE_2___default()(__webpack_require__.e(/* import() */ 6472).then(__webpack_require__.bind(__webpack_require__, 6472)), {
+    loadableGenerated: {
+        modules: [
+            "..\\Components\\Home\\ContactFormHome.jsx -> " + "@/Components/Common/ConsultantForm"
+        ]
+    }
+});
+function ContactFormHome() {
+    const ref10 = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(null);
+    const isInView19 = (0,framer_motion__WEBPACK_IMPORTED_MODULE_1__.useInView)(ref10, {
+        once: true
+    });
+    const isInView20 = (0,framer_motion__WEBPACK_IMPORTED_MODULE_1__.useInView)(ref10, {
+        once: true
+    });
+    const isInView21 = (0,framer_motion__WEBPACK_IMPORTED_MODULE_1__.useInView)(ref10, {
+        once: true
+    });
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", {
+        className: "contact-home",
+        ref: ref10,
+        children: [
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                className: "max-content-width",
+                children: [
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                        style: {
+                            transform: isInView19 ? "none" : "translateX(-500px)",
+                            opacity: isInView19 ? 1 : 0,
+                            transition: "all 0.9s cubic-bezier(0.44, 0.88, 0.88, 1) 0.5s"
+                        },
+                        children: [
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
+                                className: "sh",
+                                children: "Speak With Our Experts and Get Customized Solutions That Meet Your Business Needs and Goals."
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                className: "sd",
+                                children: "With our user-friendly approach, we make technology accessible and easy to use. We understand that every business is unique, and our team of experts will work closely with you to understand your specific needs and challenge"
+                            }),
+                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: "hchecksec",
+                                children: [
+                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        class: "form-check",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
+                                                class: "form-check-input",
+                                                type: "checkbox",
+                                                value: "",
+                                                id: "tailored-advice"
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("label", {
+                                                class: "form-check-label",
+                                                htmlFor: "tailored-advice",
+                                                children: "Tailored Advice Just for You"
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        class: "form-check",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
+                                                class: "form-check-input",
+                                                type: "checkbox",
+                                                value: "",
+                                                id: "industry-experts"
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("label", {
+                                                class: "form-check-label",
+                                                htmlFor: "industry-experts",
+                                                children: "Speak with Industry Experts"
+                                            })
+                                        ]
+                                    }),
+                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        class: "form-check",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("input", {
+                                                class: "form-check-input",
+                                                type: "checkbox",
+                                                value: "",
+                                                id: "transparency"
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("label", {
+                                                class: "form-check-label",
+                                                htmlFor: "transparency",
+                                                children: "100% Confidential and Transparency"
+                                            })
+                                        ]
+                                    })
+                                ]
+                            }),
+                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                className: "emsec",
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
+                                        className: "rchs",
+                                        children: "Reach out to us"
+                                    }),
+                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        className: "d-flex align-items-center",
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                                src: "/assets/img/email-icon.svg",
+                                                alt: ""
+                                            }),
+                                            " ",
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                                href: "mailto:Support@iwebwiser.com",
+                                                children: "Support@iwebwiser.com"
+                                            })
+                                        ]
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(ConsultantForm, {
+                        type: "home",
+                        isInView: isInView20
+                    })
+                ]
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                class: "text-center",
+                style: {
+                    transform: isInView21 ? "none" : "translateY(500px)",
+                    opacity: isInView21 ? 1 : 0,
+                    transition: "all 0.9s cubic-bezier(0.44, 0.88, 0.88, 1) 0.8s"
+                },
+                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                    class: "btn btn-outline-dark",
+                    role: "button",
+                    href: "#",
+                    children: "Schedule a Free Call Now!"
+                })
+            })
+        ]
+    });
+}
+;
+
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
+
+/***/ })
+
+};
+;

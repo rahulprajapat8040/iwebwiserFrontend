@@ -173,7 +173,7 @@ const Expertises = ({ expertiseData }) => {
                   <li className="breadcrumb-item">
                     <Link
                       href={"/app-web-software-design-development-services"}
-                      as={"/app-web-software-design-development-services"}
+                      as={"/  app-web-software-design-development-services"}
                     >
                       All Experts
                     </Link>

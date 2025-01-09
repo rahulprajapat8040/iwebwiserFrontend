@@ -1,10 +1,16 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import dynamic from "next/dynamic";
 const ImageTable = dynamic(import("@/Components/Common/ImageTable"));
 
 
 const GuestSection = ({ GuestSection }) => {
+
+  const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+  if (!isMounted) return null;
   // console.log(GuestSection)
   const ref3 = useRef(null);
   const isInView3 = useInView(ref3, { once: true });

@@ -21,7 +21,7 @@ const Layout = ({ children, data }) => {
   return (
     <>
       <main className="main-container">
-        <Header data={data?.navData} />
+        <Header  />
 
         {children}
 
