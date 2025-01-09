@@ -78,7 +78,7 @@ const BannerSection = ({ BannerSection })=>{
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                 className: "talkbtn text-center",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
-                                    href: BannerSection.ExploreBtnLink,
+                                    href: "/app-web-software-design-development-services",
                                     as: "/app-web-software-design-development-services",
                                     className: "text-white",
                                     children: BannerSection?.ExploreBtn

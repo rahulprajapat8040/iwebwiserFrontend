@@ -125,11 +125,6 @@ const Footer = next_dynamic__WEBPACK_IMPORTED_MODULE_2___default()(Promise.all(/
 // import { useInView } from "react-intersection-observer";
 const DefaultPage = (props)=>{
     // console.log(props);
-    const [isMounted, setIsMounted] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
-    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
-        setIsMounted(true);
-    }, []);
-    if (!isMounted) return null;
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Home, {
             data: props.data,
@@ -150,7 +145,7 @@ async function getStaticProps() {
     let getAllFeedbackApiData = [];
     try {
         const [navRes, bannerRes, allserviceRes, AllCaseStudyRes, getAllCertificateRes, getAllOurClientRes, getAlltechnologyRes, getAllBlogRes, getAllFeedbackRes] = await Promise.all([
-            // callApi(ApiUrl.nav_bar),
+            (0,_hooks_useapi__WEBPACK_IMPORTED_MODULE_4__/* .callApi */ .t)(_Utility_ApiUrl__WEBPACK_IMPORTED_MODULE_5__/* .ApiUrl */ .l.nav_bar),
             (0,_hooks_useapi__WEBPACK_IMPORTED_MODULE_4__/* .callApi */ .t)(`${_Utility_ApiUrl__WEBPACK_IMPORTED_MODULE_5__/* .ApiUrl */ .l.getBanner}`),
             (0,_hooks_useapi__WEBPACK_IMPORTED_MODULE_4__/* .callApi */ .t)(`${_Utility_ApiUrl__WEBPACK_IMPORTED_MODULE_5__/* .ApiUrl */ .l.getAllService}`),
             (0,_hooks_useapi__WEBPACK_IMPORTED_MODULE_4__/* .callApi */ .t)(`${_Utility_ApiUrl__WEBPACK_IMPORTED_MODULE_5__/* .ApiUrl */ .l.getAllCaseStudy}`),
@@ -160,15 +155,15 @@ async function getStaticProps() {
             (0,_hooks_useapi__WEBPACK_IMPORTED_MODULE_4__/* .callApi */ .t)(`${_Utility_ApiUrl__WEBPACK_IMPORTED_MODULE_5__/* .ApiUrl */ .l.getAllBlog}`),
             (0,_hooks_useapi__WEBPACK_IMPORTED_MODULE_4__/* .callApi */ .t)(`${_Utility_ApiUrl__WEBPACK_IMPORTED_MODULE_5__/* .ApiUrl */ .l.getAllFeedback}`)
         ]);
-        navData = navRes?.data || [];
-        BannerApiData = bannerRes?.data || null;
-        getAllServiceAPiData = allserviceRes?.data?.services || null;
-        getAllCaseStudyApiData = AllCaseStudyRes?.data?.caseStudies || null;
-        getAllCertificateApiData = getAllCertificateRes?.data?.certificates || null;
-        getAllOurClientApiData = getAllOurClientRes?.data?.ourClients || null;
-        getAlltechnologyApiData = getAlltechnologyRes?.data?.technologys || null;
-        getAllBlogApiData = getAllBlogRes?.data?.blogs || null;
-        getAllFeedbackApiData = getAllFeedbackRes?.data?.feedbacks || null;
+        navData = navRes?.data;
+        BannerApiData = bannerRes?.data;
+        getAllServiceAPiData = allserviceRes?.data?.services;
+        getAllCaseStudyApiData = AllCaseStudyRes?.data?.caseStudies;
+        getAllCertificateApiData = getAllCertificateRes?.data?.certificates;
+        getAllOurClientApiData = getAllOurClientRes?.data?.ourClients;
+        getAlltechnologyApiData = getAlltechnologyRes?.data?.technologys;
+        getAllBlogApiData = getAllBlogRes?.data?.blogs;
+        getAllFeedbackApiData = getAllFeedbackRes?.data?.feedbacks;
     } catch (err) {
         console.log(err);
     }
@@ -190,10 +185,10 @@ async function getStaticProps() {
     ];
     const data = {
         BannerSections: {
-            heading_1: BannerApiData?.title || null,
-            Section_video: BannerApiData?.image || null,
-            ExploreBtnLink: BannerApiData?.button_link || null,
-            developmentBtnBox: getAllServiceAPiData?.map((item)=>item.title) || null,
+            heading_1: BannerApiData?.title,
+            Section_video: BannerApiData?.image,
+            ExploreBtnLink: BannerApiData?.button_link,
+            developmentBtnBox: getAllServiceAPiData?.map((item)=>item.title),
             ExploreBtn: "Explore What We Offer"
         },
         AboutSection: {
@@ -204,15 +199,15 @@ async function getStaticProps() {
         },
         OurRatingSection: {
             heading_1: "Our Ratings",
-            RatingImg: getAllCertificateApiData?.map((certImage)=>certImage.image) || null
+            RatingImg: getAllCertificateApiData?.map((certImage)=>certImage.image)
         },
         GuestSection: {
-            GuestImgMap: (getAllOurClientApiData || []).map((clientImg, index)=>({
+            GuestImgMap: getAllOurClientApiData?.map((clientImg, index)=>({
                     GuestImg: clientImg.image,
                     className: borderClasses[index % borderClasses.length]
                 })),
             heading_1: "OUR CLIENTS & PARTNERS",
-            heading_2: "Trusted by Startups, Small Businesses and Global Brands."
+            heading_2: "Trusted by Startups, Small Businesses and Global Brands.   "
         },
         OurServicesHomeSection: {
             heading_1: "Our Services",
@@ -223,7 +218,7 @@ async function getStaticProps() {
                     title: service.title,
                     description: cleanDescription
                 };
-            }) || null
+            })
         },
         ProjectSection: {
             heading_1: "Our Client’s Success Makes Us Proud",
@@ -236,7 +231,7 @@ async function getStaticProps() {
                     platformUsers: caseStudy.addCaseStudy.platformUsers,
                     downloads: caseStudy.addCaseStudy.downloads,
                     industryTitle: caseStudy?.industry?.title
-                })) || null
+                }))
         },
         ServicesSection: {
             heading_1: "Explore Our Dynamic Service & Solutions",
@@ -265,7 +260,7 @@ async function getStaticProps() {
                     Img: tech.image,
                     language: tech.title
                 };
-            }) || null
+            })
         },
         HealthCareSection: {
             heading_1: "Assisting health care organisations realise their potential to offer the highest standards in delivery of primary care.",
@@ -286,7 +281,7 @@ async function getStaticProps() {
                     heading: blog.title,
                     Paragraphinner: blog.description,
                     blogLink: blog.blog_link
-                })) || null
+                }))
         },
         FeedbackSection: {
             FeedbackData: getAllFeedbackApiData?.map((feedback, index)=>({
@@ -295,7 +290,7 @@ async function getStaticProps() {
                     sub_title: feedback.sub_title,
                     description: feedback.description,
                     className: transformClass[index % transformClass.length]
-                })) || null
+                }))
         }
     };
     return {

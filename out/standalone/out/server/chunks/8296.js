@@ -40,7 +40,7 @@ var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([reac
 
 
 
-const Header = ()=>{
+const Header = ({ data })=>{
     const [loadScript, setLoadScript] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(true);
     const [show, setShow] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false);
     const [showModal, setShowModal] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false);

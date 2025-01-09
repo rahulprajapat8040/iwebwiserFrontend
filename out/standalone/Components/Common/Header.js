@@ -10,7 +10,7 @@ import { MyImage } from "@/Utility/HomeSliderData";
 import { ApiUrl, ServerUrl } from "@/Utility/ApiUrl";
 import { callApi } from "@/hooks/useapi";
 
-const Header = () => {
+const Header = ({ data }) => {
   const [loadScript, setLoadScript] = useState(true);
   const [show, setShow] = useState(false);
 

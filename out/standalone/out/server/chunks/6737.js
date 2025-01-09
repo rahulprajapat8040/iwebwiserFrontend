@@ -31,11 +31,6 @@ const ImageTable = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(__webpack
     }
 });
 const GuestSection = ({ GuestSection })=>{
-    const [isMounted, setIsMounted] = useState(false);
-    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
-        setIsMounted(true);
-    }, []);
-    if (!isMounted) return null;
     // console.log(GuestSection)
     const ref3 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useRef)(null);
     const isInView3 = (0,framer_motion__WEBPACK_IMPORTED_MODULE_2__.useInView)(ref3, {

@@ -33,7 +33,7 @@ const BannerSection = ({ BannerSection }) => {
             </ul>
             <div className="talkbtn text-center">
               <Link
-                href={BannerSection.ExploreBtnLink}
+                href={'/app-web-software-design-development-services'}
                 as={"/app-web-software-design-development-services"}
                 className="text-white"
               >
