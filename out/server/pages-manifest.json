@@ -1,0 +1,9 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/e-learning-and-education": "pages/e-learning-and-education.js",
+  "/our-industries": "pages/our-industries.js",
+  "/services-details/[serviceid]": "pages/services-details/[serviceid].js",
+  "/case-study-unlock-your-solutions": "pages/case-study-unlock-your-solutions.js"
+}
