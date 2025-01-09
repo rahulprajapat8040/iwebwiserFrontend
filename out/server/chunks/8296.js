@@ -13,8 +13,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5893);
 /* harmony import */ var _api_ApiHelper__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(3238);
-/* harmony import */ var material_react_toastify__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3213);
-/* harmony import */ var material_react_toastify__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(material_react_toastify__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_hot_toast__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6201);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1664);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6689);
@@ -26,8 +25,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Utility_HomeSliderData__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(1345);
 /* harmony import */ var _Utility_ApiUrl__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(3260);
 /* harmony import */ var _hooks_useapi__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(757);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([react_hook_form__WEBPACK_IMPORTED_MODULE_4__, framer_motion__WEBPACK_IMPORTED_MODULE_6__, _hooks_useapi__WEBPACK_IMPORTED_MODULE_9__]);
-([react_hook_form__WEBPACK_IMPORTED_MODULE_4__, framer_motion__WEBPACK_IMPORTED_MODULE_6__, _hooks_useapi__WEBPACK_IMPORTED_MODULE_9__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([react_hot_toast__WEBPACK_IMPORTED_MODULE_1__, react_hook_form__WEBPACK_IMPORTED_MODULE_4__, framer_motion__WEBPACK_IMPORTED_MODULE_6__, _hooks_useapi__WEBPACK_IMPORTED_MODULE_9__]);
+([react_hot_toast__WEBPACK_IMPORTED_MODULE_1__, react_hook_form__WEBPACK_IMPORTED_MODULE_4__, framer_motion__WEBPACK_IMPORTED_MODULE_6__, _hooks_useapi__WEBPACK_IMPORTED_MODULE_9__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
 
 
 
@@ -92,6 +91,7 @@ const Header = ({ data })=>{
         return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
             className: "Mega-menu",
             children: [
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_hot_toast__WEBPACK_IMPORTED_MODULE_1__.Toaster, {}),
                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                     className: "mega-menu-content mb-5",
                     children: [
@@ -739,7 +739,7 @@ const Header = ({ data })=>{
                     message: ""
                 });
                 toggleModal();
-                material_react_toastify__WEBPACK_IMPORTED_MODULE_1__.toast.success("Thankyou I will reach soon");
+                react_hot_toast__WEBPACK_IMPORTED_MODULE_1__.toast.success("Thankyou I will reach soon");
             } else {
                 setLoading(false);
                 console.log("err");

@@ -14,10 +14,10 @@
       "static/chunks/5675-de3db73fe1b4c2ac.js",
       "static/chunks/7740-25f4b2cc8edb86e5.js",
       "static/chunks/7066-0fd9bc75d7001a41.js",
-      "static/chunks/7473-18ddbd6fcec84b8a.js",
+      "static/chunks/7473-446eceb71b556446.js",
       "static/chunks/3314-99171ae1b3b2b673.js",
-      "static/chunks/6835.7bc14f6d3f037343.js",
-      "static/chunks/2731.e5420e98a919d744.js"
+      "static/chunks/6835.c504e8364d1895e9.js",
+      "static/chunks/2731.a336a571241d9610.js"
     ]
   },
   "..\\Components\\Home\\ContactFormHome.jsx -> @/Components/Common/ConsultantForm": {
@@ -253,7 +253,7 @@
   "our-company\\index.js -> @/Components/OurCompany/OurCompany": {
     "id": 8064,
     "files": [
-      "static/chunks/7473-18ddbd6fcec84b8a.js",
+      "static/chunks/7473-446eceb71b556446.js",
       "static/chunks/8064.009e802cd9762d19.js"
     ]
   },
@@ -282,7 +282,7 @@
       "static/chunks/5675-de3db73fe1b4c2ac.js",
       "static/chunks/7740-25f4b2cc8edb86e5.js",
       "static/chunks/7066-0fd9bc75d7001a41.js",
-      "static/chunks/7473-18ddbd6fcec84b8a.js",
+      "static/chunks/7473-446eceb71b556446.js",
       "static/chunks/6993.30acb370bdba6a5f.js"
     ]
   },

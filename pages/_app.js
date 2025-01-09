@@ -6,11 +6,10 @@ import "@/styles/Responsive.css";
 // import '@/public/assets/slick-1.8.1/slick/slick'
 // import '@/public/assets/js/Iwebwiser'
 // import '@/public/assets/js/new'
-import { ToastContainer } from "material-react-toastify";
+import { Toaster } from "react-hot-toast";
 import { useEffect, useState } from "react";
 import Loading from "./loading";
 import { Router } from "next/router";
-import "material-react-toastify/dist/ReactToastify.css";
 
 export default function NewApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);
@@ -28,13 +27,8 @@ export default function NewApp({ Component, pageProps }) {
     <>
        <Loading />
     <div id="mainNextDiv">
+      <Toaster />
       {loading ? <Loading /> : <Component {...pageProps} />}
-      <ToastContainer
-        autoClose={2000}
-        hideProgressBar
-        closeOnClick
-        rtl={false}
-      />
     </div>
     </>
   );

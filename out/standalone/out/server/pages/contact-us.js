@@ -30,8 +30,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var private_next_pages_document_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6088);
 /* harmony import */ var private_next_pages_app_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6004);
 /* harmony import */ var private_next_pages_contact_us_index_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6650);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([private_next_pages_contact_us_index_js__WEBPACK_IMPORTED_MODULE_4__]);
-private_next_pages_contact_us_index_js__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([private_next_pages_app_js__WEBPACK_IMPORTED_MODULE_3__, private_next_pages_contact_us_index_js__WEBPACK_IMPORTED_MODULE_4__]);
+([private_next_pages_app_js__WEBPACK_IMPORTED_MODULE_3__, private_next_pages_contact_us_index_js__WEBPACK_IMPORTED_MODULE_4__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
 
         // Next.js Route Loader
         
@@ -100,11 +100,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var react_hook_form__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(5641);
 /* harmony import */ var _api_ApiHelper__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(3238);
-/* harmony import */ var material_react_toastify__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(3213);
-/* harmony import */ var material_react_toastify__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(material_react_toastify__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_hot_toast__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(6201);
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(6197);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_Components_Common_Layout__WEBPACK_IMPORTED_MODULE_1__, react_hook_form__WEBPACK_IMPORTED_MODULE_6__, framer_motion__WEBPACK_IMPORTED_MODULE_8__]);
-([_Components_Common_Layout__WEBPACK_IMPORTED_MODULE_1__, react_hook_form__WEBPACK_IMPORTED_MODULE_6__, framer_motion__WEBPACK_IMPORTED_MODULE_8__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_Components_Common_Layout__WEBPACK_IMPORTED_MODULE_1__, react_hook_form__WEBPACK_IMPORTED_MODULE_6__, react_hot_toast__WEBPACK_IMPORTED_MODULE_7__, framer_motion__WEBPACK_IMPORTED_MODULE_8__]);
+([_Components_Common_Layout__WEBPACK_IMPORTED_MODULE_1__, react_hook_form__WEBPACK_IMPORTED_MODULE_6__, react_hot_toast__WEBPACK_IMPORTED_MODULE_7__, framer_motion__WEBPACK_IMPORTED_MODULE_8__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
 
 
 
@@ -158,6 +157,7 @@ const ReachUs = (props)=>{
     };
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_hot_toast__WEBPACK_IMPORTED_MODULE_7__.Toaster, {}),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_Components_Common_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
                 children: [
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_head__WEBPACK_IMPORTED_MODULE_3___default()), {
@@ -571,13 +571,6 @@ __webpack_async_result__();
 
 /***/ }),
 
-/***/ 3213:
-/***/ ((module) => {
-
-module.exports = require("material-react-toastify");
-
-/***/ }),
-
 /***/ 3076:
 /***/ ((module) => {
 
@@ -814,6 +807,13 @@ module.exports = import("framer-motion");;
 
 module.exports = import("react-hook-form");;
 
+/***/ }),
+
+/***/ 6201:
+/***/ ((module) => {
+
+module.exports = import("react-hot-toast");;
+
 /***/ })
 
 };
@@ -823,7 +823,7 @@ module.exports = import("react-hook-form");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [1388,1664,5152,2636,5675,4947,32,1372,3238], () => (__webpack_exec__(855)));
+var __webpack_exports__ = __webpack_require__.X(0, [4207,1664,5152,2636,5675,4947,32,1372,3238], () => (__webpack_exec__(855)));
 module.exports = __webpack_exports__;
 
 })();

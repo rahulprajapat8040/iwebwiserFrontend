@@ -5,7 +5,7 @@ import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { sendContactForm } from "@/api/ApiHelper";
-import { toast } from "material-react-toastify";
+import { toast, Toaster } from "react-hot-toast";
 import { motion } from "framer-motion";
 
 const ReachUs = (props) => {
@@ -60,6 +60,7 @@ const ReachUs = (props) => {
 
   return (
     <>
+      <Toaster/>
       <Layout>
         <Head>
           <title>Contact Us - iWebwiser | Your Ideas and Our Technology</title>

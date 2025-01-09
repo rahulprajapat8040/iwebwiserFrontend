@@ -3,9 +3,10 @@ exports.ids = [4947];
 exports.modules = {
 
 /***/ 6004:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ NewApp)
@@ -19,15 +20,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_Iwebwiser_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_Iwebwiser_css__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _styles_Responsive_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(4152);
 /* harmony import */ var _styles_Responsive_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_Responsive_css__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var material_react_toastify__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(3213);
-/* harmony import */ var material_react_toastify__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(material_react_toastify__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_hot_toast__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6201);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(6689);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _loading__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(7813);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(1853);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var material_react_toastify_dist_ReactToastify_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(9778);
-/* harmony import */ var material_react_toastify_dist_ReactToastify_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(material_react_toastify_dist_ReactToastify_css__WEBPACK_IMPORTED_MODULE_9__);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([react_hot_toast__WEBPACK_IMPORTED_MODULE_5__]);
+react_hot_toast__WEBPACK_IMPORTED_MODULE_5__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
 
 
@@ -37,7 +37,6 @@ __webpack_require__.r(__webpack_exports__);
 // import '@/public/assets/slick-1.8.1/slick/slick'
 // import '@/public/assets/js/Iwebwiser'
 // import '@/public/assets/js/new'
-
 
 
 
@@ -62,14 +61,9 @@ function NewApp({ Component, pageProps }) {
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                 id: "mainNextDiv",
                 children: [
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_hot_toast__WEBPACK_IMPORTED_MODULE_5__.Toaster, {}),
                     loading ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_loading__WEBPACK_IMPORTED_MODULE_7__["default"], {}) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Component, {
                         ...pageProps
-                    }),
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(material_react_toastify__WEBPACK_IMPORTED_MODULE_5__.ToastContainer, {
-                        autoClose: 2000,
-                        hideProgressBar: true,
-                        closeOnClick: true,
-                        rtl: false
                     })
                 ]
             })
@@ -77,6 +71,8 @@ function NewApp({ Component, pageProps }) {
     });
 }
 
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
 
 /***/ }),
 

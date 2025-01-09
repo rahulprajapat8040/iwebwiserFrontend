@@ -1,5 +1,5 @@
 import { sendContactForm } from "@/api/ApiHelper";
-import { toast } from "material-react-toastify";
+import { toast , Toaster} from "react-hot-toast";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { set, useForm } from "react-hook-form";
@@ -74,6 +74,7 @@ const Header = ({ data }) => {
 
     return (
       <div className="Mega-menu">
+        <Toaster/>
         <div className="mega-menu-content mb-5">
           <div className="title-content">
             <h4 className="title">Expertise</h4>

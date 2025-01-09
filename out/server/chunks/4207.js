@@ -1,5 +1,5 @@
-exports.id = 1388;
-exports.ids = [1388];
+exports.id = 4207;
+exports.ids = [4207];
 exports.modules = {
 
 /***/ 7182:
@@ -752,13 +752,6 @@ const InternalFunctionDocument = function InternalFunctionDocument() {
     return /*#__PURE__*/ _react.default.createElement(Html, null, /*#__PURE__*/ _react.default.createElement(Head, null), /*#__PURE__*/ _react.default.createElement("body", null, /*#__PURE__*/ _react.default.createElement(Main, null), /*#__PURE__*/ _react.default.createElement(NextScript, null)));
 };
 Document[_constants.NEXT_BUILTIN_DOCUMENT] = InternalFunctionDocument; //# sourceMappingURL=_document.js.map
-
-
-/***/ }),
-
-/***/ 9778:
-/***/ (() => {
-
 
 
 /***/ }),
