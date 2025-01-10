@@ -1,319 +1,122 @@
 {
   "..\\Components\\Common\\Layout.js -> ./Footer": {
-    "id": 8138,
+    "id": "..\\Components\\Common\\Layout.js -> ./Footer",
     "files": [
-      "static/chunks/1664-2283fb24e523e5cc.js",
-      "static/chunks/7066-0fd9bc75d7001a41.js",
-      "static/chunks/8138.1fa2fdbe231c99f4.js"
+      "static/chunks/Components_Common_Footer_js-_35db0.js"
     ]
   },
   "..\\Components\\Common\\Layout.js -> ./Header": {
-    "id": 8296,
+    "id": "..\\Components\\Common\\Layout.js -> ./Header",
     "files": [
-      "static/chunks/1664-2283fb24e523e5cc.js",
-      "static/chunks/5675-de3db73fe1b4c2ac.js",
-      "static/chunks/7740-25f4b2cc8edb86e5.js",
-      "static/chunks/7066-0fd9bc75d7001a41.js",
-      "static/chunks/7473-446eceb71b556446.js",
-      "static/chunks/3314-99171ae1b3b2b673.js",
-      "static/chunks/6835.c504e8364d1895e9.js",
-      "static/chunks/2731.a336a571241d9610.js"
+      "static/chunks/Components_Common_Header_js.js"
     ]
   },
   "..\\Components\\Home\\ContactFormHome.jsx -> @/Components/Common/ConsultantForm": {
-    "id": 6472,
+    "id": "..\\Components\\Home\\ContactFormHome.jsx -> @/Components/Common/ConsultantForm",
     "files": [
-      "static/chunks/6472.08232bf5f8b1b55e.js"
+      "static/chunks/Components_Common_ConsultantForm_jsx.js"
     ]
   },
   "..\\Components\\Home\\GuestSection.jsx -> @/Components/Common/ImageTable": {
-    "id": 599,
+    "id": "..\\Components\\Home\\GuestSection.jsx -> @/Components/Common/ImageTable",
     "files": [
-      "static/chunks/5675-de3db73fe1b4c2ac.js",
-      "static/chunks/621.9ace6e67e3959165.js"
+      "static/chunks/Components_Common_ImageTable_jsx.js"
     ]
   },
   "..\\Components\\Home\\Home.jsx -> @/Components/Common/Layout": {
-    "id": 1372,
+    "id": "..\\Components\\Home\\Home.jsx -> @/Components/Common/Layout",
     "files": [
-      "static/chunks/1372.aa8c83203b452b5a.js"
+      "static/chunks/Components_Common_Layout_js.js"
     ]
   },
   "..\\Components\\Home\\Home.jsx -> @/Components/Home/AboutSection": {
-    "id": 5996,
+    "id": "..\\Components\\Home\\Home.jsx -> @/Components/Home/AboutSection",
     "files": [
-      "static/chunks/5996.de0b5387532a80cf.js"
+      "static/chunks/Components_Home_AboutSection_jsx.js"
     ]
   },
   "..\\Components\\Home\\Home.jsx -> @/Components/Home/AynSection": {
-    "id": 6179,
+    "id": "..\\Components\\Home\\Home.jsx -> @/Components/Home/AynSection",
     "files": [
-      "static/chunks/5675-de3db73fe1b4c2ac.js",
-      "static/chunks/6567.b1e039716318e87f.js"
+      "static/chunks/Components_Home_AynSection_jsx.js"
     ]
   },
   "..\\Components\\Home\\Home.jsx -> @/Components/Home/BannerSection": {
-    "id": 1252,
+    "id": "..\\Components\\Home\\Home.jsx -> @/Components/Home/BannerSection",
     "files": [
-      "static/chunks/7740-25f4b2cc8edb86e5.js",
-      "static/chunks/1252.ab1dae2e714f8f38.js"
+      "static/chunks/Components_Home_BannerSection_jsx.js"
     ]
   },
   "..\\Components\\Home\\Home.jsx -> @/Components/Home/ContactFormHome": {
-    "id": 1615,
+    "id": "..\\Components\\Home\\Home.jsx -> @/Components/Home/ContactFormHome",
     "files": [
-      "static/chunks/1615.fad2e20c1e55b29f.js"
+      "static/chunks/Components_Home_ContactFormHome_jsx.js"
     ]
   },
   "..\\Components\\Home\\Home.jsx -> @/Components/Home/GuestSection": {
-    "id": 6737,
+    "id": "..\\Components\\Home\\Home.jsx -> @/Components/Home/GuestSection",
     "files": [
-      "static/chunks/6737.d5678124aaa3342d.js"
+      "static/chunks/Components_Home_GuestSection_jsx.js"
     ]
   },
   "..\\Components\\Home\\Home.jsx -> @/Components/Home/HealthCareSection": {
-    "id": 5332,
+    "id": "..\\Components\\Home\\Home.jsx -> @/Components/Home/HealthCareSection",
     "files": [
-      "static/chunks/5332.4001551e9fde257d.js"
+      "static/chunks/Components_Home_HealthCareSection_jsx.js"
     ]
   },
   "..\\Components\\Home\\Home.jsx -> @/Components/Home/IndustorylevelSection": {
-    "id": 3440,
+    "id": "..\\Components\\Home\\Home.jsx -> @/Components/Home/IndustorylevelSection",
     "files": [
-      "static/chunks/5675-de3db73fe1b4c2ac.js",
-      "static/chunks/7740-25f4b2cc8edb86e5.js",
-      "static/chunks/6066-ddfadbdb556c9c08.js",
-      "static/chunks/9449.f601e93d7103fccb.js"
+      "static/chunks/Components_Home_IndustorylevelSection_jsx.js"
     ]
   },
   "..\\Components\\Home\\Home.jsx -> @/Components/Home/OurRatings": {
-    "id": 8468,
+    "id": "..\\Components\\Home\\Home.jsx -> @/Components/Home/OurRatings",
     "files": [
-      "static/chunks/8468.7f9c066c0164fad2.js"
+      "static/chunks/Components_Home_OurRatings_jsx.js"
     ]
   },
   "..\\Components\\Home\\Home.jsx -> @/Components/Home/OurServicesHome": {
-    "id": 678,
+    "id": "..\\Components\\Home\\Home.jsx -> @/Components/Home/OurServicesHome",
     "files": [
-      "static/chunks/678.887356fc3d4cc42f.js"
+      "static/chunks/Components_Home_OurServicesHome_jsx.js"
     ]
   },
   "..\\Components\\Home\\Home.jsx -> @/Components/Home/OurTechHome": {
-    "id": 7911,
+    "id": "..\\Components\\Home\\Home.jsx -> @/Components/Home/OurTechHome",
     "files": [
-      "static/chunks/7911.27224f195156e1da.js"
+      "static/chunks/Components_Home_OurTechHome_jsx.js"
     ]
   },
   "..\\Components\\Home\\Home.jsx -> @/Components/Home/ProjectsSection": {
-    "id": 5273,
+    "id": "..\\Components\\Home\\Home.jsx -> @/Components/Home/ProjectsSection",
     "files": [
-      "static/chunks/5675-de3db73fe1b4c2ac.js",
-      "static/chunks/2699.b4fdf4f97dd611ec.js"
+      "static/chunks/Components_Home_ProjectsSection_jsx.js"
     ]
   },
   "..\\Components\\Home\\Home.jsx -> @/Components/Home/ServicesSection": {
-    "id": 8400,
+    "id": "..\\Components\\Home\\Home.jsx -> @/Components/Home/ServicesSection",
     "files": [
-      "static/chunks/8400.3c275ebfdaf7f183.js"
+      "static/chunks/Components_Home_ServicesSection_jsx.js"
     ]
   },
   "..\\Components\\Home\\Home.jsx -> @/Components/Home/SolutionSection": {
-    "id": 2242,
+    "id": "..\\Components\\Home\\Home.jsx -> @/Components/Home/SolutionSection",
     "files": [
-      "static/chunks/5675-de3db73fe1b4c2ac.js",
-      "static/chunks/2195.677bd4f7ef2a795b.js"
-    ]
-  },
-  "..\\Components\\OurCompany\\ContactFormSection.jsx -> @/Components/Common/ConsultantForm": {
-    "id": 6472,
-    "files": [
-      "static/chunks/6472.08232bf5f8b1b55e.js"
-    ]
-  },
-  "..\\Components\\OurCompany\\OurCompany.jsx -> @/Components/Common/Layout": {
-    "id": 1372,
-    "files": [
-      "static/chunks/1372.aa8c83203b452b5a.js"
-    ]
-  },
-  "..\\Components\\OurCompany\\OurCompany.jsx -> @/Components/OurCompany/AboutHomesection": {
-    "id": 1641,
-    "files": [
-      "static/chunks/7740-25f4b2cc8edb86e5.js",
-      "static/chunks/6625.4211b67376c23c97.js"
-    ]
-  },
-  "..\\Components\\OurCompany\\OurCompany.jsx -> @/Components/OurCompany/ContactFormSection": {
-    "id": 9507,
-    "files": [
-      "static/chunks/9507.e20494451ec96e27.js"
-    ]
-  },
-  "..\\Components\\OurCompany\\OurCompany.jsx -> @/Components/OurCompany/MakeUniqueSection": {
-    "id": 4527,
-    "files": [
-      "static/chunks/5675-de3db73fe1b4c2ac.js",
-      "static/chunks/4668.45d04da9b8d6dbac.js"
-    ]
-  },
-  "..\\Components\\OurCompany\\OurCompany.jsx -> @/Components/OurCompany/OurMissionSection": {
-    "id": 7526,
-    "files": [
-      "static/chunks/7526.0484adde3da52ea1.js"
-    ]
-  },
-  "..\\Components\\OurCompany\\OurCompany.jsx -> @/Components/OurCompany/OurValue": {
-    "id": 1986,
-    "files": [
-      "static/chunks/1664-2283fb24e523e5cc.js",
-      "static/chunks/1986.13425c3922889ae7.js"
-    ]
-  },
-  "..\\Components\\OurCompany\\OurCompany.jsx -> @/Components/OurCompany/TechnicalSection": {
-    "id": 8589,
-    "files": [
-      "static/chunks/8589.1c73a9a6f85b74fb.js"
-    ]
-  },
-  "..\\Components\\Partnership\\Partnership.jsx -> @/Components/Common/ImageTable": {
-    "id": 599,
-    "files": [
-      "static/chunks/599.6899ffc1c7b0df6c.js"
-    ]
-  },
-  "..\\Components\\Partnership\\Partnership.jsx -> @/Components/Common/Layout": {
-    "id": 1372,
-    "files": [
-      "static/chunks/1372.aa8c83203b452b5a.js"
-    ]
-  },
-  "best-web-development-company\\index.js -> @/Components/Common/Layout": {
-    "id": 1372,
-    "files": [
-      "static/chunks/1372.aa8c83203b452b5a.js"
-    ]
-  },
-  "blockchain-development-services\\index.js -> @/Components/Common/Layout": {
-    "id": 1372,
-    "files": [
-      "static/chunks/1372.aa8c83203b452b5a.js"
-    ]
-  },
-  "career\\index.js -> @/Components/Common/Layout": {
-    "id": 1372,
-    "files": [
-      "static/chunks/1372.aa8c83203b452b5a.js"
-    ]
-  },
-  "digital-marketing-services-company\\index.js -> @/Components/Common/Layout": {
-    "id": 1372,
-    "files": [
-      "static/chunks/1372.aa8c83203b452b5a.js"
-    ]
-  },
-  "e-learning-and-education\\index.js -> @/Components/Common/Layout": {
-    "id": 1372,
-    "files": [
-      "static/chunks/1372.aa8c83203b452b5a.js"
-    ]
-  },
-  "graphic-and-ui-ux-design-company\\index.js -> @/Components/Common/Layout": {
-    "id": 1372,
-    "files": [
-      "static/chunks/1372.aa8c83203b452b5a.js"
-    ]
-  },
-  "healthcare-and-lifestyle\\index.js -> @/Components/Common/Layout": {
-    "id": 1372,
-    "files": [
-      "static/chunks/1372.aa8c83203b452b5a.js"
+      "static/chunks/Components_Home_SolutionSection_jsx.js"
     ]
   },
   "index.js -> @/Components/Common/Footer": {
-    "id": 8138,
+    "id": "index.js -> @/Components/Common/Footer",
     "files": [
-      "static/chunks/1664-2283fb24e523e5cc.js",
-      "static/chunks/7066-0fd9bc75d7001a41.js",
-      "static/chunks/5834.c63ec2a49352e80f.js"
+      "static/chunks/Components_Common_Footer_js-_35db1.js"
     ]
   },
   "index.js -> @/Components/Home/Home": {
-    "id": 9580,
+    "id": "index.js -> @/Components/Home/Home",
     "files": [
-      "static/chunks/1664-2283fb24e523e5cc.js",
-      "static/chunks/9580.92b5cceebc08f4ab.js"
-    ]
-  },
-  "iwebwiser-testimonials-your-trust\\index.js -> @/Components/Common/Layout": {
-    "id": 1372,
-    "files": [
-      "static/chunks/1372.aa8c83203b452b5a.js"
-    ]
-  },
-  "our-company\\index.js -> @/Components/OurCompany/OurCompany": {
-    "id": 8064,
-    "files": [
-      "static/chunks/7473-446eceb71b556446.js",
-      "static/chunks/8064.009e802cd9762d19.js"
-    ]
-  },
-  "our-industries\\index.js -> @/Components/Common/Layout": {
-    "id": 1372,
-    "files": [
-      "static/chunks/1372.aa8c83203b452b5a.js"
-    ]
-  },
-  "our-indutrise\\index.js -> @/Components/Common/Layout": {
-    "id": 1372,
-    "files": [
-      "static/chunks/1372.aa8c83203b452b5a.js"
-    ]
-  },
-  "our-solutions\\index.js -> @/Components/Common/Layout": {
-    "id": 1372,
-    "files": [
-      "static/chunks/1372.aa8c83203b452b5a.js"
-    ]
-  },
-  "partnership\\index.js -> @/Components/Partnership/Partnership": {
-    "id": 5959,
-    "files": [
-      "static/chunks/1664-2283fb24e523e5cc.js",
-      "static/chunks/5675-de3db73fe1b4c2ac.js",
-      "static/chunks/7740-25f4b2cc8edb86e5.js",
-      "static/chunks/7066-0fd9bc75d7001a41.js",
-      "static/chunks/7473-446eceb71b556446.js",
-      "static/chunks/6993.30acb370bdba6a5f.js"
-    ]
-  },
-  "pricing\\index.js -> @/Components/Common/Layout": {
-    "id": 1372,
-    "files": [
-      "static/chunks/1372.aa8c83203b452b5a.js"
-    ]
-  },
-  "real-estate\\index.js -> @/Components/Common/Layout": {
-    "id": 1372,
-    "files": [
-      "static/chunks/1372.aa8c83203b452b5a.js"
-    ]
-  },
-  "retail-ecommerce\\index.js -> @/Components/Common/Layout": {
-    "id": 1372,
-    "files": [
-      "static/chunks/1372.aa8c83203b452b5a.js"
-    ]
-  },
-  "services-details\\[serviceid]\\index.js -> @/Components/ServicesDetails/FAQSection": {
-    "id": 5516,
-    "files": [
-      "static/chunks/5516.fda1c5b8a6f66ab7.js"
-    ]
-  },
-  "tour-and-travel\\index.js -> @/Components/Common/Layout": {
-    "id": 1372,
-    "files": [
-      "static/chunks/1372.aa8c83203b452b5a.js"
+      "static/chunks/Components_Home_Home_jsx.js"
     ]
   }
 }

@@ -36,7 +36,7 @@ export async function getStaticProps() {
 
   try {
     const [navRes, bannerRes, allserviceRes, AllCaseStudyRes, getAllCertificateRes, getAllOurClientRes, getAlltechnologyRes, getAllBlogRes, getAllFeedbackRes] = await Promise.all([
-      callApi(ApiUrl.nav_bar),
+      // callApi(ApiUrl.nav_bar),
       callApi(`${ApiUrl.getBanner}`),
       callApi(`${ApiUrl.getAllService}`),
       callApi(`${ApiUrl.getAllCaseStudy}`),
@@ -47,7 +47,7 @@ export async function getStaticProps() {
       callApi(`${ApiUrl.getAllFeedback}`),
     ]);
 
-    navData = navRes?.data
+    // navData = navRes?.data
     BannerApiData = bannerRes?.data
     getAllServiceAPiData = allserviceRes?.data?.services
     getAllCaseStudyApiData = AllCaseStudyRes?.data?.caseStudies
