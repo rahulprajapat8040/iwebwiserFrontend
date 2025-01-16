@@ -2,7 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/404": "pages/404.js",
   "/our-industries": "pages/our-industries.js",
   "/our-industries/[slug]": "pages/our-industries/[slug].js",
   "/case-study-unlock-your-solutions": "pages/case-study-unlock-your-solutions.js"

@@ -1,6 +1,6 @@
 // export const ServerUrl = 'https://b5123341-8001.inc1.devtunnels.ms/'
-// export const ServerUrl = 'http://213.210.21.175:8001/api/v1'
-export const ServerUrl = "http://localhost:8001/api/v1";
+export const ServerUrl = 'http://213.210.21.175:8001/api/v1'
+// export const ServerUrl = "http://localhost:8001/api/v1";
 export const ApiUrl = {
   nav_bar: `${ServerUrl}/nav/getNavBar`,
   getBanner: `${ServerUrl}/banner/getAllBanner`,

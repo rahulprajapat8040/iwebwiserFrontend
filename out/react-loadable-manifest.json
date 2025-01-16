@@ -10,11 +10,5 @@
     "files": [
       "static/chunks/Components_Common_Header_js.js"
     ]
-  },
-  "our-industries\\index.js -> @/Components/Common/Layout": {
-    "id": "our-industries\\index.js -> @/Components/Common/Layout",
-    "files": [
-      "static/chunks/Components_Common_Layout_js.js"
-    ]
   }
 }
