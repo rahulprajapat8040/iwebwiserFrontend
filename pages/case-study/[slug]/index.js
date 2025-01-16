@@ -136,7 +136,7 @@ const CaseDetail = ({ caseStudyData }, props) => {
               <div className="row justify-content-between">
                 <div className="col-12 col-lg-7">
                   <div className="project-detail-text">
-                    <h5>Delivery system</h5>
+                    <h5>{caseStudyData?.industry?.title || "No data"}</h5>
                     <h4>{caseStudyData?.addCaseStudy?.productName}</h4>
                     <p
                       dangerouslySetInnerHTML={{
@@ -279,115 +279,6 @@ const CaseDetail = ({ caseStudyData }, props) => {
             </div>
           </div>
         </section>
-        {/* System Features section end here... */}
-        {/* Technology stack section start here... */}
-        {/* <section className="technology-stack d-none">
-          <div className="max-content-width">
-            <div className="container-fluid">
-              <h4>Technology stack</h4>
-              <div className="row">
-                <div className="col-6 col-md-3 col-lg-2">
-                  <div className="technology-stack-card">
-                    <div className="technology-stack-img">
-                      <a
-                        className="btn stretched-link"
-                        role="button"
-                        href="https://aws.amazon.com/free/?trk=14a4002d-4936-4343-8211-b5a150ca592b&sc_channel=ps&ef_id=CjwKCAjw-vmkBhBMEiwAlrMeFwbibSOiLODJlRZqTDQ6EhShGoo-WdXw_1qiXoa3CzmjNgUUB2_RkBoCmecQAvD_BwE:G:s&s_kwcid=AL!4422!3!453325184782!e!!g!!aws!10712784856!111477279771"
-                      >
-                        <MyImage
-                          src={props.caseDetailData.image_10}
-                          alt="technology-stack"
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-6 col-md-3 col-lg-2">
-                  <div className="technology-stack-card">
-                    <div className="technology-stack-img">
-                      <a
-                        className="btn stretched-link"
-                        role="button"
-                        href="https://nodejs.org/en"
-                      >
-                        <MyImage
-                          src={props.caseDetailData.image_11}
-                          alt="technology-stack"
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-6 col-md-3 col-lg-2">
-                  <div className="technology-stack-card">
-                    <div className="technology-stack-img">
-                      <a
-                        className="btn stretched-link"
-                        role="button"
-                        href="https://react.dev/"
-                      >
-                        <MyImage
-                          src={props.caseDetailData.image_12}
-                          alt="technology-stack"
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-6 col-md-3 col-lg-2">
-                  <div className="technology-stack-card">
-                    <div className="technology-stack-img">
-                      <a
-                        className="btn stretched-link"
-                        role="button"
-                        href="https://www.mysql.com/"
-                      >
-                        <MyImage
-                          src={props.caseDetailData.image_13}
-                          alt="technology-stack"
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-6 col-md-3 col-lg-2">
-                  <div className="technology-stack-card">
-                    <div className="technology-stack-img">
-                      <a
-                        className="btn stretched-link"
-                        role="button"
-                        href="https://laravel.com/"
-                      >
-                        <MyImage
-                          src={props.caseDetailData.image_14}
-                          alt="technology-stack"
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
-        {/* Technology stack section end here... */}
-
-        {/* System phases section start here... */}
         {caseStudyData?.system_phase?.length > 1 && (
           <section className="system-phase ">
             <div className="max-14-content">
@@ -470,12 +361,22 @@ export async function getServerSideProps({ params }) {
   try {
     const { slug } = params;
     const response = await fetch(`${ApiUrl.getCaseStudyBySlug}/${slug}`);
-    const caseStudyData = await response.json();
+    const data = await response.json();
+
+    // Ensure we have valid data and transform any undefined values to null
+    const sanitizedData = {
+      addCaseStudy: data.data?.addCaseStudy || null,
+      addtional_information: data.data?.addtional_information || [],
+      challenges: data.data?.challenges || null,
+      impact: data.data?.impact || null,
+      system_phase: data.data?.system_phase || [],
+      industry: data.data?.industry || null
+    };
 
     return {
       props: {
-        caseStudyData: caseStudyData.data,
-        slug,
+        caseStudyData: sanitizedData,
+        slug: slug || null,
       },
     };
   } catch (error) {
@@ -483,8 +384,8 @@ export async function getServerSideProps({ params }) {
     return {
       props: {
         caseStudyData: null,
-        slug: params.slug,
-        error: "Failed to fetch case study data",
+        slug: params.slug || null,
+        error: "Failed to fetch case study data"
       },
     };
   }

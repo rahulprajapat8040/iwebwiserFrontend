@@ -192,8 +192,8 @@ const CaseStudy = ({ caseStudyData }) => {
                             />
                             <div className="text-center text-lg-start">
                               <Link
-                                href={`casestudy/${caseStudy?.slug}`}
-                                as={`casestudy/${caseStudy?.slug}`}
+                                href={`case-study/${caseStudy?.slug}`}
+                                as={`case-study/${caseStudy?.slug}`}
                                 className="btn btn-outline-dark bg-white"
                               >
                                 READ MORE

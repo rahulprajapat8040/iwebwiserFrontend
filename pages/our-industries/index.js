@@ -106,14 +106,14 @@ const Industry = ({ industryData }) => {
               </div>
               <ul className="industryboxes">
                 {industryData?.map((item, index) => (
-                  <li
+                  <li>
+
+                  
+                  <Link
                     className="boxes"
                     key={index}
-                    onClick={() =>
-                      router.push(
-                        `'/industries/industry/${item?.industry_page?.slug}`
-                      )
-                    }
+                    style={{ cursor: "pointer" }}
+                    href={`/our-industries/${item?.industry_page?.slug || '#'}`}
                   >
                     {console.log("induties", item)}
                     <div className="img-box">
@@ -125,6 +125,7 @@ const Industry = ({ industryData }) => {
                         dangerouslySetInnerHTML={{ __html: item.description }}
                       ></p>
                     </div>
+                  </Link>
                   </li>
                 ))}
               </ul>

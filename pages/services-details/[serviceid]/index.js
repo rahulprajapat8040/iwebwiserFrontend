@@ -5,6 +5,7 @@ import { ApiUrl } from "@/Utility/ApiUrl";
 import { callApi } from "@/hooks/useapi";
 import Link from "next/link";
 import dynamic from "next/dynamic";
+import ContactFormHome from "@/Components/Home/ContactFormHome";
 
 // Import client component dynamically
 const DynamicFAQSection = dynamic(
@@ -13,6 +14,8 @@ const DynamicFAQSection = dynamic(
     ssr: false,
   }
 );
+const ConsultantForm = dynamic(import("@/Components/Common/ConsultantForm"));
+
 
 // Move sanitizer outside component
 const sanitizeHtml = (html) => {
@@ -39,10 +42,6 @@ function ServicesDetails({ serverData, stepsDatas }) {
         serviceIndustryDescription: sanitizeHtml(
           serverData.serviceIndustryDescription
         ),
-        sub_services: serverData.sub_services?.map((service) => ({
-          ...service,
-          description: sanitizeHtml(service.short_description),
-        })),
         service: {
           ...serverData.service,
           industries: serverData.service?.industries?.map((item) => ({
@@ -181,18 +180,14 @@ function ServicesDetails({ serverData, stepsDatas }) {
                   href={data?.ServiceDetailButtonUrl || "/service"}
                   class="btn btn-outline-dark"
                 >
-                  Get Tailored Solutions
+                  {data?.ServiceDetailButtonText || "Get Tailored Solutions"}
                 </Link>
               </div>
               <ul class="services-grid">
-                {data?.sub_services?.map((service) => (
+                {data?.serviceSolution?.map((service) => (
                   <li key={service.id}>
                     <h3>{service.title}</h3>
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html: service.description,
-                      }}
-                    ></p>
+                    <p>{service?.description}</p>
                   </li>
                 ))}
               </ul>
@@ -220,7 +215,7 @@ function ServicesDetails({ serverData, stepsDatas }) {
                 ></div>
               </div>
               <ul class="industries-grid">
-                {stepsDatas?.map((item) => (
+                {data?.stepsWeFollow?.map((item) => (
                   <li key={item.id}>
                     <div className="imgtpbx">
                       <img src={item.image} alt="" />
@@ -296,9 +291,8 @@ function ServicesDetails({ serverData, stepsDatas }) {
                         />
                       </li>
                     </ul>
-                  </div>
-
-                  <div class="tools-list__item">
+                    
+                    <div class="tools-list__item">
                     <h3 class="tools-list__category">
                       For low-fidelity wireframing
                     </h3>
@@ -321,24 +315,29 @@ function ServicesDetails({ serverData, stepsDatas }) {
                     {/* <h3 class="tools-list__category">
                       For creating interfaces and wireframes
                     </h3> */}
-                    <ul class="tools-list__icons">
-                      {data.sub_services.map((service) =>
-                        service.technologies.map((tech) => (
-                          <li key={tech.id}>
-                            <img
-                              src={tech.image}
-                              alt={tech.title}
-                              class="tools-icon"
-                            />
-                          </li>
-                        ))
-                      )}
-                    </ul>
+                    {data.techWeUse.map((service) => (
+                      <>
+                        <h3 class="tools-list__category">{service.title}</h3>
+                        <ul class="tools-list__icons ">
+                        {service?.technologies.map((tech) => (
+                            <li key={tech.id}>
+                              <img
+                                src={tech.image}
+                                alt={tech.title}
+                                class="tools-icon"
+                                />
+                            </li>
+                        ))}
+                        </ul>
+                      </>
+                    ))}
                   </div>
                 </div>
               </div>
             </div>
+          <ContactFormHome />
           </section>
+          {/* <ConsultantForm /> */}
           {/* Client-side interactive FAQ section */}
           <DynamicFAQSection
             faqs={data?.service?.service_faqs?.map((faq) => ({

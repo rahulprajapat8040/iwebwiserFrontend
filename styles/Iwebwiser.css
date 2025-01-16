@@ -4223,7 +4223,7 @@ footer.footer .max-content-width {
   margin-bottom: 10px;
 }
 
-.system-features .feature-text .description {
+.system-features .feature-text .description p {
   color: #4f4d4d;
   font-family: "Poppins";
   font-size: 16px;
@@ -4233,12 +4233,14 @@ footer.footer .max-content-width {
   margin-bottom: 20px;
 }
 
-.system-features .feature-text ul li p {
+.system-features .feature-text .description ul li  {
   font-weight: 400;
   line-height: 158.333%;
+  color: #000;
   margin-bottom: 0;
   font-family: "Poppins";
   font-size: 18px;
+  list-style: disc;
   font-style: normal;
   font-weight: 600;
   line-height: 38px;
@@ -9841,8 +9843,14 @@ section.empowrdes .sh {
   line-height: 135.5%;
 }
 
-section.empowrdes .sd {
+section.empowrdes .sd p {
   max-width: 790px;
   margin: auto;
   color: #4F4D4D;
 }
+
+
+/* // ANIMATIONS  */
+
+.fade-in{-webkit-animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both;animation:fade-in 1.2s cubic-bezier(.39,.575,.565,1.000) both}
+@-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}

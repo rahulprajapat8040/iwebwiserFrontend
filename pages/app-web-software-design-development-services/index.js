@@ -487,7 +487,11 @@ const Expertises = ({ servicesData }) => {
                         ))}
                       </div>
                       {item?.buttonText && (
-                        <Link href={item?.buttonLink || ""} className="btn btn-dark">
+                        <Link
+                          href={item?.buttonLink || ""}
+                          className="px-5 py-4 btn btn-dark"
+                          style={{fontSize: "14px"}}
+                        >
                           {item?.buttonText}
                         </Link>
                       )}

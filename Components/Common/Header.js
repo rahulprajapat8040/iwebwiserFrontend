@@ -981,7 +981,7 @@ const Header = ({ data }) => {
                             {HeaderData?.map((item) => {
                               return (
                                 <li>
-                                  {item?.services?.slice(0, 5).map((megaMenu) => (
+                                  {item?.services?.slice(0, 1).map((megaMenu) => (
                                     <li key={item?.id}>
                                       <Link
                                         // role="button"
@@ -1138,7 +1138,7 @@ const Header = ({ data }) => {
                                         <Link
                                           // role="button"
                                           href={
-                                            `services-details/${megaMenu?.service_detail?.slug}` ||
+                                            `/services-details/${megaMenu?.service_detail?.slug}` ||
                                             "/"
                                           }
                                           as={megaMenu.link}
@@ -1193,7 +1193,7 @@ const Header = ({ data }) => {
                                       <Link
                                         // role="button"
                                         href={
-                                          `services-details/${megaMenu?.service_detail?.slug}` ||
+                                          `/services-details/${megaMenu?.service_detail?.slug}` ||
                                           "/"
                                         }
                                         as={megaMenu.link}
