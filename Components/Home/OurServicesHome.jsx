@@ -20,11 +20,11 @@ export default function OurServicesHome({ OurServicesHome }) {
                     opacity: isInView19 ? 1 : 0,
                     transition: "all 0.9s cubic-bezier(0.44, 0.88, 0.88, 1) 0.5s",
                 }}>
-                    <h3 className="sh">{OurServicesHome.heading_1}</h3>
-                    <p className="sd">{OurServicesHome.Paragraph}</p>
+                    <h3 className="sh">{OurServicesHome?.heading_1}</h3>
+                    <p className="sd">{OurServicesHome?.Paragraph}</p>
                 </div>
                 <div className="content">
-                {OurServicesHome.serviceData.slice(0, 6).map((service, index) => (
+                {OurServicesHome?.serviceData?.slice(0, 6).map((service, index) => (
                     <div className="inner-card"  key={index} style={{
                         transform: isInView20 ? "none" : "translateX(-100px)",
                         opacity: isInView20 ? 1 : 0,
@@ -48,8 +48,8 @@ export default function OurServicesHome({ OurServicesHome }) {
                                         <path d="M18.5 25.4079C20.2804 25.4079 21.7237 23.9646 21.7237 22.1843C21.7237 20.4039 20.2804 18.9606 18.5 18.9606C16.7196 18.9606 15.2763 20.4039 15.2763 22.1843C15.2763 23.9646 16.7196 25.4079 18.5 25.4079Z" fill="white" stroke="#0029FF" />
                                     </svg>
                                 </div>
-                                <h5>{service.title}</h5>
-                                <p>{service.description}</p>
+                                <h5>{service?.title}</h5>
+                                <p>{service?.description}</p>
                             </div>
                         </div>
                         

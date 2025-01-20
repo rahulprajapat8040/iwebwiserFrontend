@@ -6,6 +6,7 @@ import { callApi } from "@/hooks/useapi";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import ContactFormHome from "@/Components/Home/ContactFormHome";
+import { DynamicMetaTags } from "@/Components/Common/DynamicMetaTags";
 
 // Import client component dynamically
 const DynamicFAQSection = dynamic(
@@ -68,7 +69,8 @@ function ServicesDetails({ serverData, stepsDatas }) {
 
   return (
     <>
-      <Head>
+    <DynamicMetaTags metaString={data.metas} />
+      {/* <Head>
         <title>
           Design & Development of Businesses | Professional Developers
         </title>
@@ -119,7 +121,7 @@ function ServicesDetails({ serverData, stepsDatas }) {
           property="og:description"
           content="iWebwiser's professional developers provide top-quality design & development services along with prime support services & IT solutions to grow your business."
         />
-      </Head>
+      </Head> */}
 
       <Layout>
         <div className="">
@@ -218,7 +220,7 @@ function ServicesDetails({ serverData, stepsDatas }) {
                 {data?.stepsWeFollow?.map((item) => (
                   <li key={item.id}>
                     <div className="imgtpbx">
-                      <img src={item.image} alt="" />
+                      <img src={item.image} alt={item.alt || item.title} />
                     </div>
 
                     <h3 className="text-white">{item.title}</h3>
